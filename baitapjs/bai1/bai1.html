@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập JS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="./bai1.css" />
+  </head>
+  <body>
+    <header>
+      <h1>quản lý tuyển sinh</h1>
+    </header>
+    <div class="content">
+      <div class="container">
+        <div class="container--content">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Điểm chuẩn của Hội Đồng:</span>
+            </div>
+            <input type="text" class="form-control" id="diemHoiDongTxt" />
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="diemHoiDongTxt"
+                >Điểm ba môn thi:</span
+              >
+            </div>
+            <input type="text" class="form-control" id="monThuNhatTxt" />
+            <input type="text" class="form-control" id="monThuHaiTxt" />
+            <input type="text" class="form-control" id="monThuBaTxt" />
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                >Khu vực ưu tiên (Nhập "x" nếu không thuộc khu vực ưu
+                tiên)</span
+              >
+            </div>
+            <input type="text" class="form-control" id="khuVucUuTienTxt" />
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                >Đối tượng ưu tiên (Nhập "0" nếu không thuộc đối tượng ưu
+                tiên)</span
+              >
+            </div>
+            <input type="text" class="form-control" id="doiTuongUuTienTxt" />
+          </div>
+          <button class="button-5" role="button" onclick=" tinhDiem()">
+            KIỂM TRA
+          </button>
+          <h3 id="ketQuaTxt"></h3>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="./bai1.js"></script>
+  </body>
+</html>

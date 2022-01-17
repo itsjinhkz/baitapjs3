@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập JS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="./bai3.css" />
+  </head>
+  <body>
+    <header>
+      <h1>tính tiền cáp</h1>
+    </header>
+    <div class="content">
+      <div class="container">
+        <div class="container--content">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Mã khách hàng:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="maKhachHangTxt"
+                aria-describedby="emailHelp"
+                placeholder="Mã khách hàng"
+              />
+            </div>
+            <select
+              class="custom-select"
+              id="customer"
+              onchange="updateCustomer()"
+            >
+              <option selected>Loại khách hàng</option>
+              <option value="1">Nhà dân</option>
+              <option value="2">Doanh nghiệp</option>
+            </select>
+            <div class="form-group">
+              <div id="ketNoi">
+                <label for="exampleInputEmail1">Số kết nối:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="soKetNoiTxt"
+                  aria-describedby="emailHelp"
+                  placeholder="Số kết nối"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Kênh cao cấp:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="kenhCaoCapTxt"
+                aria-describedby="emailHelp"
+                placeholder="Kênh cao cấp"
+              />
+            </div>
+          </form>
+          <button class="button-5" role="button" onclick="tinhTien()">
+            TÍNH TIỀN
+          </button>
+          <h3 id="ketQuaTxt"></h3>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="./bai3.js"></script>
+  </body>
+</html>

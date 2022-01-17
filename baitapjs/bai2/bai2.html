@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập JS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="./bai2.css" />
+  </head>
+  <body>
+    <header>
+      <h1>tính thuế thu nhập cá nhân</h1>
+    </header>
+    <div class="content">
+      <div class="container">
+        <div class="container--content">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Họ và tên:</span>
+            </div>
+            <input type="text" class="form-control" id="usernameTxt" />
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Tổng thu nhập:</span>
+            </div>
+            <input type="text" class="form-control" id="tongThuNhapTxt" />
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Số người phụ thuộc:</span>
+            </div>
+            <input type="text" class="form-control" id="soNguoiPhuThuocTxt" />
+          </div>
+          <button class="button-5" role="button" onclick="tinhThue()">
+            KIỂM TRA
+          </button>
+          <h3 id="ketQuaTxt"></h3>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="./bai2.js"></script>
+  </body>
+</html>
